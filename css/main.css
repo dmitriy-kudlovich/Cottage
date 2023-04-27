@@ -155,6 +155,7 @@ button:active {
   position: relative;
   display: block;
   font-size: 1.5rem;
+  color: #fff;
 }
 .nav__link::after {
   content: "";
