@@ -1,0 +1,18 @@
+.button {
+  background-color: #ffb800;
+  padding: 1.5625rem 4.125rem;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  border-radius: 1.125rem;
+  transition: background-color 0.2s ease-out;
+
+  &:hover {
+    background-color: lighten($color: #ffb800, $amount: 10%);
+  }
+
+  &:visited {
+    color: #fff;
+  }
+}

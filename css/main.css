@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* Cтили, заданные по умолчанию */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.link--underline {
+  position: relative;
+}
+
+.link--underline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #4b5d68;
+  transition: width 0.2s;
+}
+
+.link--underline:hover::before {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img--full-width {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 80rem;
+  min-width: 20rem;
+}
+
+.text {
+  font-size: 1.75rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.0625rem;
+}
+
+.header {
+  position: relative;
+  padding: 3.9375rem 0 14rem 0;
+  background: #f89006 url(../img/header_bg.jpg) no-repeat center/cover;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11.9375rem;
+  color: #fff;
+}
+
+.logo__wrapper {
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  background-color: #f89006;
+}
+
+.nav__row {
+  display: flex;
+  align-items: center;
+}
+
+.nav__li {
+  margin-right: 2.25rem;
+}
+.nav__li:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+}
+.nav__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.2s ease-in;
+}
+.nav__link:hover::after {
+  width: 100%;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 9.3125rem;
+  text-align: center;
+  font-size: 4.625rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.section {
+  margin-bottom: 14.875rem;
+}
+.section:first-child {
+  padding-top: 14.875rem;
+}
+
+.section--yellow-bg {
+  padding: 5.375rem 0 9.6875rem 0;
+  margin-bottom: 0;
+  background-color: #ffd500;
+}
+
+.section__heading {
+  margin-bottom: 5.3125rem;
+  text-align: center;
+  font-size: 4.25rem;
+}
+
+.content__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12rem;
+}
+.content__row:last-child {
+  margin-bottom: 0;
+}
+.content__row:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.content__text {
+  width: 48%;
+}
+
+.img-wrapper--about {
+  width: 48%;
+}
+
+.row--gallery {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6rem;
+}
+
+.gallery__item {
+  width: 28.8%;
+}
+
+.gallery__item-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 130%;
+}
+
+.gallery__item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__img-wrapper {
+  display: flex;
+  height: 85.5%;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.gallery__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__desc {
+  text-align: center;
+  font-weight: 700;
+}
+
+.button {
+  background-color: #ffb800;
+  padding: 1.5625rem 4.125rem;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  border-radius: 1.125rem;
+  transition: background-color 0.2s ease-out;
+}
+.button:hover {
+  background-color: #ffc633;
+}
+.button:visited {
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
