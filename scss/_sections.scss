@@ -83,3 +83,19 @@
   text-align: center;
   font-weight: 700;
 }
+
+.section__row {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+}
+
+.section__icon-wrapper {
+  margin-right: 1.875rem;
+  width: 5%;
+  text-align: center;
+}
+
+.fa-solid {
+  font-size: 3.125rem;
+}

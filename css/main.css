@@ -105,6 +105,10 @@ button:active {
   letter-spacing: 0.0625rem;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .header {
   position: relative;
   padding: 3.9375rem 0 14rem 0;
@@ -261,6 +265,21 @@ button:active {
 .gallery__desc {
   text-align: center;
   font-weight: 700;
+}
+
+.section__row {
+  display: flex;
+  align-items: center;
+}
+
+.section__icon-wrapper {
+  margin-right: 1.875rem;
+  width: 5%;
+  text-align: center;
+}
+
+.fa-solid {
+  font-size: 3.125rem;
 }
 
 .button {
