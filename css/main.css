@@ -274,13 +274,51 @@ button:active {
 }
 
 .section__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 1.875rem;
-  width: 5%;
+  width: 8rem;
+  height: 8rem;
   text-align: center;
+  font-size: 3.125rem;
+  color: #ffb800;
+  border: 0.8rem solid #ffb800;
+  border-radius: 50%;
 }
 
-.fa-solid {
-  font-size: 3.125rem;
+.section__row--cost {
+  margin-bottom: 3.5rem;
+}
+.section__row--cost:last-child {
+  margin-bottom: 0;
+}
+
+.section__content--alt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__row--alt {
+  width: 100%;
+  justify-content: flex-end;
+}
+.section__row--alt:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.section__row--alt:nth-child(2n) .section__icon-wrapper {
+  margin-right: 0;
+  margin-left: 1.875rem;
+}
+
+.section__icon-wrapper--alt {
+  padding: 0;
+  border: none;
+  width: 8rem;
+  height: auto;
+  font-size: 5rem;
 }
 
 .button {
