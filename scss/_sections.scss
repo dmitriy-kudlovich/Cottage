@@ -126,7 +126,7 @@
   }
 }
 
-.section--bg-side{
+.section--bg-side {
   position: relative;
   overflow: hidden;
   &::after {
@@ -180,4 +180,19 @@
 
 .section__desc--alt {
   width: calc(50% - 5.9rem);
+}
+
+.booking__row {
+  display: flex;
+}
+
+a.section__icon-wrapper {
+  transition: 0.2s color ease-in;
+  &:visited {
+    color: #ffb800;
+  }
+
+  &:hover {
+    color: lighten($color: #ffb800, $amount: 20);
+  }
 }

@@ -363,6 +363,20 @@ button:active {
   width: calc(50% - 5.9rem);
 }
 
+.booking__row {
+  display: flex;
+}
+
+a.section__icon-wrapper {
+  transition: 0.2s color ease-in;
+}
+a.section__icon-wrapper:visited {
+  color: #ffb800;
+}
+a.section__icon-wrapper:hover {
+  color: #ffd466;
+}
+
 .button {
   background-color: #ffb800;
   padding: 1.5625rem 4.125rem;
