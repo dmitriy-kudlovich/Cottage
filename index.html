@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,13 +26,15 @@
             <li class="nav__li">
               <a href="#rules" class="nav__link">Правила</a>
             </li>
-            <li class="nav__li"><a href="#!" class="nav__link">Контакты</a></li>
+            <li class="nav__li">
+              <a href="#booking" class="nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <div class="header__content">
           <h1 class="heading">Коттедж для отдыха</h1>
           <div class="header__link">
-            <a href="#!" class="button">Забронировать</a>
+            <a href="#booking" class="button">Забронировать</a>
           </div>
         </div>
       </div>
@@ -473,45 +475,128 @@
         <div class="container">
           <h2 class="section__heading">Бронирование</h2>
           <div class="section__content">
-            <div class="section__row">
-              <div class="booking">
-                <div class="booking__text">
-                  <p class="text bold">
-                    Отправьте заявку, позвоните или напишите нам
-                  </p>
-                  <p class="text">
-                    <a href="tel:81234567890" class="text">+7 123 456 78 90</a>
-                    <a href="mailto:info@mail.ru" class="text">info@mail.ru</a>
-                  </p>
+            <form id="formSubmit" class="form">
+              <div
+                class="section__row section__row--stretch section__row--between form__content"
+              >
+                <div class="booking">
+                  <div class="booking__text">
+                    <p class="text bold">
+                      Отправьте заявку, позвоните или напишите нам
+                    </p>
+                    <p class="text">
+                      <a href="tel:81234567890" class="text"
+                        >+7 123 456 78 90</a
+                      >
+                      <a href="mailto:info@mail.ru" class="text"
+                        >info@mail.ru</a
+                      >
+                    </p>
+                  </div>
+                  <div class="booking__row">
+                    <a
+                      href="#!"
+                      target="_blank"
+                      class="section__icon-wrapper section__icon-wrapper--alt"
+                    >
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a
+                      href="#!"
+                      target="_blank"
+                      class="section__icon-wrapper section__icon-wrapper--alt"
+                    >
+                      <i class="fa-brands fa-vk"></i>
+                    </a>
+                    <a
+                      href="#!"
+                      target="_blank"
+                      class="section__icon-wrapper section__icon-wrapper--alt"
+                    >
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
+                  </div>
+                  <div class="map">
+                    <div style="position: relative; overflow: hidden">
+                      <a
+                        href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                        style="
+                          color: #eee;
+                          font-size: 12px;
+                          position: absolute;
+                          top: 0px;
+                        "
+                        >Яндекс Карты</a
+                      ><a
+                        href="https://yandex.ru/maps/geo/derevnya_orlovka/53062684/?ll=38.152829%2C55.871107&utm_medium=mapframe&utm_source=maps&z=16.01"
+                        style="
+                          color: #eee;
+                          font-size: 12px;
+                          position: absolute;
+                          top: 14px;
+                        "
+                        >Деревня Орловка — Яндекс Карты</a
+                      ><iframe
+                        class="map__content"
+                        src="https://yandex.ru/map-widget/v1/?ll=38.152829%2C55.871107&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA2MjY4NBKRAdCg0L7RgdGB0LjRjywg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCz0L7RgNC-0LTRgdC60L7QuSDQvtC60YDRg9CzINCb0L7RgdC40L3Qvi3Qn9C10YLRgNC-0LLRgdC60LjQuSwg0LTQtdGA0LXQstC90Y8g0J7RgNC70L7QstC60LAiCg0unBhCFeR8X0I%2C&z=16.01"
+                        style="position: relative"
+                      ></iframe>
+                    </div>
+                  </div>
                 </div>
-                <div class="booking__row">
-                  <a
-                    href="#!"
-                    target="_blank"
-                    class="section__icon-wrapper section__icon-wrapper--alt"
-                  >
-                    <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-                  <a
-                    href="#!"
-                    target="_blank"
-                    class="section__icon-wrapper section__icon-wrapper--alt"
-                  >
-                    <i class="fa-brands fa-vk"></i>
-                  </a>
-                  <a
-                    href="#!"
-                    target="_blank"
-                    class="section__icon-wrapper section__icon-wrapper--alt"
-                  >
-                    <i class="fa-brands fa-telegram"></i>
-                  </a>
+
+                <div class="form__inputs">
+                  <input type="text" class="input" placeholder="Ваши ФИО" />
+                  <input
+                    type="tel"
+                    class="input"
+                    placeholder="Ваш номер телефона"
+                  />
+                  <input type="text" class="input" placeholder="Дата заезда" />
+                  <input type="text" class="input" placeholder="Дата выезда" />
+                  <input
+                    type="number"
+                    class="input"
+                    placeholder="Количество гостей"
+                  />
                 </div>
               </div>
-            </div>
+
+              <div class="section__row section__row--end form__button-wrapper">
+                <button
+                  class="button form__button"
+                  id="btnSubmit"
+                  type="submit"
+                >
+                  Отправить
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <a href="index.html" class="logo__wrapper"></a>
+          <p class="text bold">Название организации</p>
+        </div>
+        <div class="footer__desc">
+          <p class="text">
+            <a href="tel:81234567890" class="text">+7 123 456 78 90</a>
+            <a href="mailto:info@mail.ru" class="text">info@mail.ru</a>
+            <a
+              href="https://yandex.ru/maps/-/CCUKn4tiLC"
+              target="_blank"
+              class="text"
+              >Адрес</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

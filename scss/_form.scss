@@ -1,0 +1,30 @@
+.form__content {
+  margin-bottom: 4.8125rem;
+}
+
+.form {
+  display: block;
+}
+
+.form__inputs,
+.form__button {
+  width: 47%;
+}
+
+.input {
+  display: block;
+  margin-bottom: 4.8125rem;
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+  padding-bottom: 9%;
+  border: 1px solid #5c5c5c;
+  border-radius: 0.3125rem;
+  font-family: "Montserrat Alternates", sans-serif;
+
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

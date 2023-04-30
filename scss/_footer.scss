@@ -1,0 +1,42 @@
+.footer {
+  padding: 5.375rem 0 4.25rem 0;
+  background-color: #fce465;
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.9375rem;
+}
+
+.footer .logo__wrapper {
+  margin-right: 3.1875rem;
+}
+
+.footer__desc {
+  width: fit-content;
+}
+
+.footer__desc a {
+  position: relative;
+  display: block;
+  width: fit-content;
+
+  line-height: 3.5rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.2s ease-in;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+    color: inherit;
+  }
+}
