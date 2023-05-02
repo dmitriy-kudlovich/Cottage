@@ -1,11 +1,11 @@
 .button {
   background-color: #ffb800;
-  padding: 1.5625rem 4.125rem;
+  padding: calc(var(--index) * 1.5) calc(var(--index) * 3);
   text-align: center;
   font-family: "Montserrat Alternates", sans-serif;
 
   color: #fff;
-  font-size: 3rem;
+  font-size: calc(var(--index) * 3);
   font-weight: 700;
   border-radius: 1.125rem;
   transition: background-color 0.2s ease-out;
@@ -17,5 +17,47 @@
   &:visited {
     color: #fff;
   }
+
+  @media (min-width: 71.25rem) {
+    font-size: 3rem;
+    padding: 1.5625rem 4.125rem;
+  }
 }
 
+.btn__close--wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: calc(var(--index) * 6);
+  width: 100%;
+}
+
+.btn__close {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: aqua;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 100%;
+    height: 25%;
+    background-color: #ffb800;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 25%;
+    background-color: #ffb800;
+  }
+}

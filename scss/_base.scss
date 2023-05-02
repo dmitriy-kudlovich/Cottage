@@ -1,6 +1,10 @@
 /* Cтили, заданные по умолчанию */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
 
+:root {
+  --index: calc(1vw + 1vh);
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -109,4 +113,8 @@ button:active {
 
 .bold {
   font-weight: 700;
+}
+
+.none {
+  display: none;
 }

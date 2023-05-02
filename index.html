@@ -9,6 +9,29 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="header__nav header__nav--mobile">
+      <div class="btn__close--wrapper">
+        <div class="btn__close" id="btnClose"></div>
+      </div>
+      <ul class="nav__row--mobile">
+        <li class="nav__li">
+          <a href="#about" class="nav__link">О коттедже</a>
+        </li>
+        <li class="nav__li">
+          <a href="#gallery" class="nav__link">Галерея</a>
+        </li>
+        <li class="nav__li">
+          <a href="#cost" class="nav__link">Стоимость</a>
+        </li>
+        <li class="nav__li">
+          <a href="#rules" class="nav__link">Правила</a>
+        </li>
+        <li class="nav__li">
+          <a href="#booking" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+      <div class="logo__wrapper"></div>
+    </div>
     <header class="header">
       <div class="container">
         <nav class="header__nav">
@@ -32,14 +55,17 @@
           </ul>
         </nav>
         <div class="header__content">
-          <h1 class="heading">Коттедж для отдыха</h1>
+          <h1 class="heading">
+            Коттедж<br />
+            для отдыха
+          </h1>
           <div class="header__link">
             <a href="#booking" class="button">Забронировать</a>
           </div>
         </div>
       </div>
     </header>
-    <main class="main">
+    <main class="main none">
       <section class="section" id="about">
         <div class="container">
           <h2 class="section__heading">О коттедже</h2>
@@ -576,7 +602,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer none">
       <div class="container">
         <div class="footer__row">
           <a href="index.html" class="logo__wrapper"></a>
