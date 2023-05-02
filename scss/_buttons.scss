@@ -1,6 +1,6 @@
 .button {
   background-color: #ffb800;
-  padding: calc(var(--index) * 1.5) calc(var(--index) * 3);
+  padding: calc(var(--index) * 1.5) calc(var(--index) * 2.5);
   text-align: center;
   font-family: "Montserrat Alternates", sans-serif;
 
@@ -27,15 +27,18 @@
 .btn__close--wrapper {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: calc(var(--index) * 6);
+  margin-bottom: calc(var(--index) * 2.5);
   width: 100%;
+
+  @media (min-width: 48rem) {
+    margin-bottom: 2rem;
+  }
 }
 
 .btn__close {
   position: relative;
   width: 3rem;
   height: 3rem;
-  background-color: aqua;
 
   &::before {
     content: "";
