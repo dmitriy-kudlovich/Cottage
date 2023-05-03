@@ -45,6 +45,23 @@
   }
 }
 
+.logo__wrapper--mobile {
+  position: relative;
+  width: calc(var(--index) * 5);
+  height: auto;
+}
+
+.logo__wrapper--mobile__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 100%;
+  background-color: #f89006;
+  border-radius: 50%;
+}
+
 .nav__row {
   display: none;
 
@@ -106,7 +123,7 @@
 .header__nav--mobile {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   flex-direction: column;
   justify-content: flex-start;
   padding: calc(var(--index) * 3);
@@ -114,11 +131,16 @@
   max-width: 24.375rem;
   height: 100vh;
   background-color: #fff;
-  z-index: 2;
+  z-index: 3;
+  transition: right 0.2s ease-in;
 
   @media (min-width: 71.25rem) {
     display: none;
   }
+}
+
+.header__nav--mobile--active {
+  right: 0;
 }
 
 .nav__row--mobile {

@@ -64,3 +64,29 @@
     background-color: #ffb800;
   }
 }
+
+.btn--hamburger {
+  position: fixed;
+  right: 0.9375rem;
+  top: calc(var(--index) * 3);
+  width: calc(var(--index) * 7);
+  height: calc(var(--index) * 7);
+  border-top: solid #f89006 calc(var(--index) * 1.5);
+  border-bottom: solid #f89006 calc(var(--index) * 1.5);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: calc(var(--index) * 1.5);
+    background-color: #f89006;
+  }
+
+  @media (min-width: 71.25rem) {
+    display: none;
+  }
+}
