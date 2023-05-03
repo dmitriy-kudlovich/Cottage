@@ -156,7 +156,6 @@
   margin-bottom: calc(var(--index) * 1.5);
   margin-right: 0;
   text-align: center;
-  color: #000000;
 
   &:last-child {
     margin-bottom: 0;
@@ -169,7 +168,6 @@
 
 .nav__links {
   margin-bottom: calc(var(--index) * 1.5);
-
   color: #000;
   text-align: center;
 
@@ -178,6 +176,10 @@
   }
 }
 
-.header__nav--mobile .nav__link {
-  color: #000;
+.nav__link--mobile {
+  color: #000000;
+
+  &:visited {
+    color: #000000;
+  }
 }
