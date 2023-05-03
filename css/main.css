@@ -316,6 +316,10 @@ button:active {
   }
 }
 
+.header__nav--mobile .nav__link {
+  color: #000;
+}
+
 .main {
   padding-bottom: 22.25rem;
 }

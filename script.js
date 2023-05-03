@@ -3,7 +3,6 @@ const navMobile = document.querySelector("#navMobile");
 const btnClose = document.querySelector("#btnClose");
 const overlay = document.querySelector("#overlay");
 const body = document.querySelector("body");
-let linksMobile = document.querySelectorAll(".nav__row--mobile .nav__link");
 const formSubmit = document.querySelector("#formSubmit");
 
 formSubmit.addEventListener("submit", (event) => {
