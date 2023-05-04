@@ -103,12 +103,28 @@ button:active {
   padding: 0 15px;
   max-width: 80rem;
   min-width: 20rem;
+
+  @media (min-width: 48rem) {
+    padding: 0 1.875rem;
+  }
+
+  @media (min-width: 71.25rem) {
+    padding: 0;
+  }
 }
 
 .text {
-  font-size: 1.75rem;
-  line-height: 2.7rem;
-  letter-spacing: 0.0625rem;
+  font-size: calc(var(--index) * 2);
+
+  @media (min-width: 71.25rem) {
+    line-height: 2.7rem;
+    font-size: 1.75rem;
+    letter-spacing: 0.0625rem;
+  }
+}
+
+.br {
+  display: none;
 }
 
 .bold {
