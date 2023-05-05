@@ -10,7 +10,15 @@
 }
 
 .footer .logo__wrapper {
-  margin-right: 3.1875rem;
+  margin-right: calc(var(--index) * 2);
+
+  @media (min-width: 71.25rem) {
+    margin-right: 3.1875rem;
+  }
+}
+
+.footer .logo-text {
+  width: 70%;
 }
 
 .footer__desc {

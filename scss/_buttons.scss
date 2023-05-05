@@ -24,6 +24,14 @@
   }
 }
 
+.form__button {
+  width: 100%;
+
+  @media (min-width: 71.25rem) {
+    width: auto;
+  }
+}
+
 .btn__close--wrapper {
   display: flex;
   justify-content: flex-end;
