@@ -363,6 +363,9 @@ button:active {
   .section {
     margin-bottom: 14.875rem;
   }
+  .section:first-child {
+    padding-top: 14.875rem;
+  }
 }
 
 .section--yellow-bg {

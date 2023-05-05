@@ -19,6 +19,10 @@
 
   @media (min-width: 71.25rem) {
     margin-bottom: 14.875rem;
+
+    &:first-child {
+      padding-top: 14.875rem;
+    }
   }
 }
 
