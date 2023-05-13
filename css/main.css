@@ -342,7 +342,7 @@ button:active {
 }
 
 .main {
-  padding-bottom: calc(var(--index) * 4);
+  padding-bottom: calc(var(--index) * 15);
 }
 @media (min-width: 71.25rem) {
   .main {
@@ -358,6 +358,7 @@ button:active {
 }
 .section:last-child {
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 @media (min-width: 71.25rem) {
   .section {
@@ -872,7 +873,7 @@ a.text:hover {
 }
 
 @media (min-width: 71.25rem) {
-  .form__inputs,
+  .form__col,
   .form__button {
     width: 47%;
   }

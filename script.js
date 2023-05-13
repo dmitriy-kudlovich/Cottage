@@ -4,6 +4,7 @@ const btnClose = document.querySelector("#btnClose");
 const overlay = document.querySelector("#overlay");
 const body = document.querySelector("body");
 const formSubmit = document.querySelector("#formSubmit");
+const bookingCol = document.querySelector("#bookingCol");
 
 $(document).ready(function () {
   $("#formSubmit").on("submit", function (event) {
@@ -19,8 +20,13 @@ $(document).ready(function () {
 
       // Функция если все прошло успешно
       success: function (html) {
-        $("#formSubmit").slideUp(800);
+        Array.from(bookingCol.children).forEach(function (elem) {
+          elem.style.marginBottom = "3rem";
+        });
+
+        $("#formInputs").slideUp(800);
         $("#answer").html(html);
+        document.querySelector("#formButton").innerHTML = "";
       },
     });
 

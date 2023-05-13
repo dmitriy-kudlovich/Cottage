@@ -9,6 +9,8 @@ $c = true;
 $project_name = trim($_POST["project_name"]);
 $admin_email  = trim($_POST["admin_email"]);
 $email_from  = trim($_POST["email_from"]);
+$form_subject = 'Заявка на аренду коттеджа';
+$message = "";
 
 // Serialize form fields - that filled-in by User
 foreach ( $_POST as $key => $value ) {
@@ -40,8 +42,6 @@ function send_user_data_in_txt_file ($message){
 function adopt($text) {
 	return '=?UTF-8?B?'.base64_encode($text).'?=';
 }
-
-$form_subject = 'Заявка на аренду коттеджа';
 
 // Preparing header
 $headers = "MIME-Version: 1.0" . PHP_EOL .

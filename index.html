@@ -555,7 +555,12 @@
         <div class="container">
           <h2 class="section__heading">Бронирование</h2>
           <div class="section__content">
-            <form id="formSubmit" class="form" action="./php/send.php">
+            <form
+              id="formSubmit"
+              class="form"
+              action="./php/send.php"
+              method="post"
+            >
               <input type="hidden" name="project_name" value="cottage" />
               <input
                 type="hidden"
@@ -567,7 +572,7 @@
               <div
                 class="section__row section__row--stretch section__row--between form__content"
               >
-                <div class="booking">
+                <div class="booking" id="bookingCol">
                   <div class="booking__text">
                     <p class="text bold">
                       Отправьте заявку, позвоните или напишите нам
@@ -633,46 +638,51 @@
                   </div>
                 </div>
 
-                <div class="form__inputs">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Ваши ФИО"
-                    name="clientName"
-                    required="required"
-                  />
-                  <input
-                    type="tel"
-                    class="input"
-                    placeholder="Ваш номер телефона"
-                    name="clientTel"
-                    required="required"
-                  />
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Дата заезда"
-                    name="dateIn"
-                    required="required"
-                  />
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Дата выезда"
-                    name="dateOut"
-                    required="required"
-                  />
-                  <input
-                    type="number"
-                    class="input"
-                    placeholder="Количество гостей"
-                    name="guestsAmount"
-                    required="required"
-                  />
+                <div class="form__col">
+                  <div class="form__inputs" id="formInputs">
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Ваши ФИО"
+                      name="clientName"
+                      required="required"
+                    />
+                    <input
+                      type="tel"
+                      class="input"
+                      placeholder="Ваш номер телефона"
+                      name="clientTel"
+                      required="required"
+                    />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Дата заезда"
+                      name="dateIn"
+                      required="required"
+                    />
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Дата выезда"
+                      name="dateOut"
+                      required="required"
+                    />
+                    <input
+                      type="number"
+                      class="input"
+                      placeholder="Количество гостей"
+                      name="guestsAmount"
+                      required="required"
+                    />
+                  </div>
+                  <div id="answer"></div>
                 </div>
               </div>
-
-              <div class="section__row section__row--end form__button-wrapper">
+              <div
+                class="section__row section__row--end form__button-wrapper"
+                id="formButton"
+              >
                 <button
                   class="button form__button"
                   id="btnSubmit"
@@ -682,7 +692,6 @@
                 </button>
               </div>
             </form>
-            <div id="answer"></div>
           </div>
         </div>
       </section>
