@@ -5,8 +5,28 @@ const overlay = document.querySelector("#overlay");
 const body = document.querySelector("body");
 const formSubmit = document.querySelector("#formSubmit");
 
-formSubmit.addEventListener("submit", (event) => {
-  event.preventDefault();
+$(document).ready(function () {
+  $("#formSubmit").on("submit", function (event) {
+    event.preventDefault();
+
+    let string = $("#formSubmit").serialize(); // Соханяем данные введенные в форму в строку.
+
+    // Формируем ajax запрос
+    $.ajax({
+      type: "POST", // Тип запроса - POST
+      url: "php/send.php", // Куда отправляем запрос
+      data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+
+      // Функция если все прошло успешно
+      success: function (html) {
+        $("#formSubmit").slideUp(800);
+        $("#answer").html(html);
+      },
+    });
+
+    // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+    return false;
+  });
 });
 
 btnHamburger.addEventListener("click", () => {

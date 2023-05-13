@@ -555,7 +555,15 @@
         <div class="container">
           <h2 class="section__heading">Бронирование</h2>
           <div class="section__content">
-            <form id="formSubmit" class="form">
+            <form id="formSubmit" class="form" action="./php/send.php">
+              <input type="hidden" name="project_name" value="cottage" />
+              <input
+                type="hidden"
+                name="admin_email"
+                value="carnagery@mail.ru"
+              />
+              <input type="hidden" name="email_from" value="info@cottage.ru" />
+
               <div
                 class="section__row section__row--stretch section__row--between form__content"
               >
@@ -626,18 +634,40 @@
                 </div>
 
                 <div class="form__inputs">
-                  <input type="text" class="input" placeholder="Ваши ФИО" />
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Ваши ФИО"
+                    name="clientName"
+                    required="required"
+                  />
                   <input
                     type="tel"
                     class="input"
                     placeholder="Ваш номер телефона"
+                    name="clientTel"
+                    required="required"
                   />
-                  <input type="text" class="input" placeholder="Дата заезда" />
-                  <input type="text" class="input" placeholder="Дата выезда" />
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Дата заезда"
+                    name="dateIn"
+                    required="required"
+                  />
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Дата выезда"
+                    name="dateOut"
+                    required="required"
+                  />
                   <input
                     type="number"
                     class="input"
                     placeholder="Количество гостей"
+                    name="guestsAmount"
+                    required="required"
                   />
                 </div>
               </div>
@@ -652,6 +682,7 @@
                 </button>
               </div>
             </form>
+            <div id="answer"></div>
           </div>
         </div>
       </section>
@@ -676,7 +707,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./libs/jquery.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
